@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Finger+Paint&display=swap" rel="stylesheet">
+    <title>Anné-za's Best Sellers</title>
+</head>
+<style>  
+    body {
+        background-color: rgb(248, 243, 228);
+        background-image: url("034C.jpg");
+    }
+    .card {
+        background-color: rgb(255, 254, 208);
+        color: rgb(61, 20, 20);
+        height: 100%;
+        width: 80%;
+        top: 20%;
+        box-shadow: 15px 15px #a4977b;
+        border: solid, 10px, rgb(255, 254, 208);
+    }
+
+    h1 {
+        margin-top: 2%;
+        font-size: 55px;
+        font-family:'Pacifico', 'serif';
+        text-decoration: underline;
+        color: rgb(81, 46, 9);
+    }
+
+    img {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .cover {
+        background-color: rgb(248, 243, 228);
+        height: 500%;
+        margin-top: 7%;
+        
+    }
+
+    #title {
+        font-family: 'satisfy';
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(92, 60, 41);
+    }
+    .nav-item {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+
+    .nav-item:hover {
+        color: white;
+    }
+
+    #bg {
+        background-color: rgb(245, 201, 162);
+    }
+
+    span{
+        opacity: 0;
+    }
+    .col:hover span {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;   
+    }
+
+    .col:hover {
+        transform: translateY(-8px);
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+
+    .navbar-toggler {
+        background-color: rgb(128, 86, 62);
+        width: 20%;
+        scale: 75%;
+    }
+
+    p {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" id = "bg">
+          <a class="navbar-brand" href="#" id = "title">Anné-za's</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           <p>Menu</p>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+<h1 class = "text-center">Best Selling Pizzas!</h1>
+        <div class = "container">
+            <div class = "row row-cols-1 row-cols-xl-4 row-cols-md-2 row-cols-sm-9 g-1 gy-5">
+                <div class = "col">
+                    <div class = "card">
+                        <img class = "card-img-top" src = "cheese.png" alt = "placeholder bc yes">
+                    <div class="card-title">
+                        <h2>Cheese</h2>
+                        <span> The plain pizza</span>
+                        </div>  
+                    </div>   
+                </div>
+                
+                <div class = "col">
+                    <div class = "card">
+                        <img class = "card-img-top" src = "pepperoni.png" alt = "placeholder bc yes">
+                    <div class="card-title">
+                        <h2>Pepperoni</h2>
+                        <span> The most popular topping</span>
+                        </div>    
+                    </div>   
+                </div>
+
+                <div class = "col">
+                    <div class = "card">
+                        <img class = "card-img-top" src = "classic.png" alt = "placeholder bc yes">
+                    <div class="card-title">
+                        <h2>Classic Meat</h2>
+                        <span> Combo of Pepperoni and Sausage</span>
+                        </div>    
+                    </div>   
+                </div>
+
+                <div class = "col">
+                    <div class = "card">
+                        <img class = "card-img-top" src = "special.png" alt = "placeholder bc yes">
+                    <div class="card-title">
+                        <h2>House Special</h2>
+                        <span> The iconic half creamy pesto shrimp and half marinara chicken</span>
+                        </div>    
+                    </div>   
+                </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
